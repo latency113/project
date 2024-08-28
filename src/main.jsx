@@ -7,6 +7,9 @@ import Contact from './pages/Contact.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Home/>
+    <div className='font-pro'>
+          <Home/>
+    </div>
+
   </StrictMode>,
 )
