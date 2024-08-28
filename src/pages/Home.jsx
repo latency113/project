@@ -6,19 +6,20 @@ import Orange from "../assets/Orange.png";
 import Meat from "../assets/Meat.png";
 import Cheese from "../assets/Cheese.png";
 import Salmon from "../assets/Salmon.png";
-import Bbg from "../assets/Banner.jpg";
+import Banner from "../template/Banner";
+// import Bbg from "../assets/Banner.jpg";
 
 const Home = () => {
   return (
     <Layout>
       <div className="bg-white mt-1">
         <div className="p-4">
-          <h1 className="text-6xl font-bold text-center text-green-900">สินค้าต่างๆ</h1>
+          <h1 className="text-6xl font-bold text-center text-green-200">สินค้าต่างๆ</h1>
           <br />
           
-          <div className="px-5 pb-5 flex justify-center">
+          {/* <div className="px-5 pb-5 flex justify-center">
             <img src={Bbg} className="rounded-2xl w-3/4" />
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-5">
             <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4">
