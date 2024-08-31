@@ -20,7 +20,7 @@ const Home = () => {
       <div className="bg-white mt-1">
         <div className="p-4">
 
-        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+        <div className="h-56 sm:h-64 xl:h-80 2xl:h-96 p-4 ">
       <Carousel onSlideChange={(index) => console.log('onSlideChange()', index)}>
         <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
           Slide 1

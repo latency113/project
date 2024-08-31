@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import NotFound from './pages/NotFound'
 import Login from './pages/Login'
+import Cart from './pages/Cart'
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/about" element={<About/>}/>
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/cart" element={<Cart/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>

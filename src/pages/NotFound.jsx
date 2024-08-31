@@ -1,8 +1,13 @@
 import React from 'react'
+import Layout from '../template/Layout'
 
 const NotFound = () => {
   return (
-    <div>NotFound</div>
+    <Layout>
+          <div className='text-center p-4 text-4xl'>
+            Page NotFound.
+            </div>
+    </Layout>
   )
 }
 

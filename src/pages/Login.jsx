@@ -6,7 +6,7 @@ const Login = () => {
     <Layout>
         <div className=''>
 
-        <div className='text-green-500 text-4xl mt-5 p-4 bg-white rounded-lg shadow '>
+        <div className='text-green-500 text-4xl text-center mt-5 p-4 bg-white rounded-lg shadow '>
             <h1>LOGIN</h1>
 
         <div className='p-4 justify-center flex'>
