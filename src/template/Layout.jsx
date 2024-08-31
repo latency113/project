@@ -5,11 +5,13 @@ import Footer from './Footer'
 
 const Layout = ({children}) => {
   return (
-    <>
-    <Navbar/>
-    {children}
-    <Footer/>
-    </>
+<div className="flex flex-col min-h-screen">
+        <Navbar />
+        <div className="container mx-auto w-full flex-grow">
+            {children}
+        </div>
+        <Footer />
+      </div>
   )
 }
 
