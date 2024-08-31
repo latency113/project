@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 
 
-image - https://www.pixelsquid.com/collections/grocerystore
+image - https://www.pixelsquid.com/collections/grocerystore <br>
       - https://www.pngegg.com/en/search?q=lays
       <br>
 flowbite - https://flowbite-react.com/docs/components/carousel
