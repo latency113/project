@@ -31,7 +31,7 @@ const Home = () => {
 
           {/* All Product */}
 
-          <div className="container flex space-x-4 mx-auto">
+          <div className="flex-container flex flex-wrap gap-4 space-x-4 mx-auto">
 
             <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
               <a href="#">
