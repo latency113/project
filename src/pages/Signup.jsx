@@ -2,12 +2,12 @@ import React from 'react'
 import Layout from '../template/Layout'
 import { NavLink } from 'react-router-dom'
 
-const Login = () => {
+const Signup = () => {
   return (
     <Layout>
 
         <div className='text-green-500 text-4xl text-center mt-5 p-4 bg-white rounded-lg shadow '>
-            <h1>Login</h1>
+            <h1>Sign Up</h1>
 
         <div className='p-4 justify-center flex'>
              <div class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -16,12 +16,20 @@ const Login = () => {
                   Sign in to your account
               </h1>
               <form class="space-y-4 md:space-y-6" action="#">
+                  <div >
+                      <label for="username" class="flex block mb-2 text-lg font-medium text-gray-900 dark:text-white">Username</label>
+                      <input type="username" name="username" id="username" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 text-sm dark:focus:border-blue-500" placeholder="enter your username" required=""/>
+                  </div>
                   <div>
-                      <label for="email" class="flex block mb-2 text-lg font-medium text-gray-900 dark:text-white">Your email</label>
+                      <label for="email" class="flex block mb-2 text-lg font-medium text-gray-900 dark:text-white">Email</label>
                       <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 text-sm dark:focus:border-blue-500" placeholder="enter your email" required=""/>
                   </div>
                   <div>
                       <label for="password" class="flex block mb-2 text-lg font-medium text-gray-900 dark:text-white">Password</label>
+                      <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 text-sm dark:focus:border-blue-500" required=""/>
+                  </div>
+                  <div>
+                      <label for="password" class="flex block mb-2 text-lg font-medium text-gray-900 dark:text-white">Password Confirm</label>
                       <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 text-sm dark:focus:border-blue-500" required=""/>
                   </div>
                   <div class="flex items-center justify-between">
@@ -33,15 +41,9 @@ const Login = () => {
                             <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
                           </div>
                       </div>
-                      <a href="#" class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
+                      <NavLink to="/login" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Sign In</NavLink>
                   </div>
-                  <button type="submit" className="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
-                  <p className="space-x-1 text-sm font-light text-gray-500 dark:text-gray-400">
-                      Don’t have an account yet?
-                      <NavLink to="/signup" className="font-medium text-primary-600 hover:underline dark:text-primary-500">
-                        Sign up
-                      </NavLink>
-                  </p>
+                  <button type="submit" className="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign Up</button>
               </form>
             </div>
             </div>
@@ -52,4 +54,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default Signup

@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import NotFound from './pages/NotFound'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
+import Signup from './pages/Signup'
 const App = () => {
   return (
     <>
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/cart" element={<Cart/>}/>
+          <Route path="/signup" element={<Signup/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>

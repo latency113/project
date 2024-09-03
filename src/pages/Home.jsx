@@ -13,6 +13,7 @@ import Velveeta from "../images/Velveeta (1).png";
 import Bbg from "../images/Banner.jpg";
 
 
+
 const Home = () => {
   return (
     <Layout>
@@ -31,160 +32,135 @@ const Home = () => {
 
           {/* All Product */}
 
-          <div className="flex-container flex flex-wrap gap-4 space-x-4 mx-auto">
+          <div className="grid grid-flow-col gap-4 border border-red-500 justify-center">
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
+            <div className="w-auto bg-white border border-gray-200 p-2 rounded-lg shadow">
               <a href="#">
-                <img className="p-8 rounded-t-lg" src={Apple} alt="product image"/>
+                <img className="bg:cover min-p-8 rounded-t-lg" src={Apple} alt="product image"/>
               </a>
-              <div className="px-5 pb-5 flex-grow">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+
+                  <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
                     แอปเปิ้ล 1 ตะกร้า
                   </h5>
-                </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
+                
+                <div className="flex justify-between">
+
+                <span className="text-xl font-medium text-gray-900 dark:text-white">
                   12฿/ลูก
                 </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
-                </a>
-              </div>
-            </div>
 
-
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
-              <a href="#">
-                <img className="p-8 rounded-t-lg" src={Orange} alt="product image"/>
-              </a>
-              <div className="px-5 pb-5 flex-grow">
                 <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    ส้ม 1 ตะกร้า
-                  </h5>
+                  <div className="flex text-white bg-green-600 hover:bg-green-800 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>  
+                  </div>
                 </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  10฿/ลูก
-                </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
-                </a>
-              </div>
+
+                </div>
+              
             </div>
 
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
+            <div className=" bg-white border border-gray-200 p-2 rounded-lg shadow">
               <a href="#">
-                <img className="p-8 rounded-t-lg" src={Meat} alt="product image"/>
+                <img className="bg:cover min-p-8 rounded-t-lg" src={Apple} alt="product image"/>
               </a>
-              <div className="px-5 pb-5 flex-grow">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    เนื้อ
+
+                  <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                    แอปเปิ้ล 1 ตะกร้า
                   </h5>
-                </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  150฿
+                
+                <div className="flex justify-between">
+
+                <span className="text-xl font-medium text-gray-900 dark:text-white">
+                  12฿/ลูก
                 </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
+
+                <a href="#">
+                  <div className="flex text-white bg-green-600 hover:bg-green-800 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>  
+                  </div>
                 </a>
-              </div>
+
+                </div>
+              
             </div>
 
-
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
+            <div className=" bg-white border border-gray-200 p-2 rounded-lg shadow">
               <a href="#">
-                <img className="p-8 rounded-t-lg" src={Cheese} alt="product image"/>
+                <img className="bg:cover min-p-8 rounded-t-lg" src={Apple} alt="product image"/>
               </a>
-              <div className="px-5 pb-5 flex-grow">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    ชีส 1 แพ็ค
+
+                  <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                    แอปเปิ้ล 1 ตะกร้า
                   </h5>
-                </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  120฿
+                
+                <div className="flex justify-between">
+
+                <span className="text-xl font-medium text-gray-900 dark:text-white">
+                  12฿/ลูก
                 </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
+
+                <a href="#">
+                  <div className="flex text-white bg-green-600 hover:bg-green-800 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>  
+                  </div>
                 </a>
-              </div>
+
+                </div>
+              
             </div>
 
-
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
+            <div className=" bg-white border border-gray-200 p-2 rounded-lg shadow">
               <a href="#">
-                <img className="p-8 rounded-t-lg" src={Salmon} alt="product image"/>
+                <img className="bg:cover min-p-8 rounded-t-lg" src={Apple} alt="product image"/>
               </a>
-              <div className="px-5 pb-5 flex-grow">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    เนื้อปลา 1 แพ็ค
+
+                  <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                    แอปเปิ้ล 1 ตะกร้า
                   </h5>
-                </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  120฿
+                
+                <div className="flex justify-between">
+
+                <span className="text-xl font-medium text-gray-900 dark:text-white">
+                  12฿/ลูก
                 </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
+
+                <a href="#">
+                  <div className="flex text-white bg-green-600 hover:bg-green-800 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>  
+                  </div>
                 </a>
-              </div>
+
+                </div>
+              
             </div>
 
 
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
+            <div className=" bg-white border border-gray-200 p-2 rounded-lg shadow">
               <a href="#">
-                <img className="p-8 rounded-t-lg" src={Original} alt="product image"/>
+                <img className="bg:cover min-p-8 rounded-t-lg" src={Apple} alt="product image"/>
               </a>
-              <div className="px-5 pb-5 flex-grow">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  Smart Balance 1 ชิ้น
+
+                  <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                    แอปเปิ้ล 1 ตะกร้า
                   </h5>
-                </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  120฿
+                
+                <div className="flex justify-between">
+
+                <span className="text-xl font-medium text-gray-900 dark:text-white">
+                  12฿/ลูก
                 </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
+
+                <a href="#">
+                  <div className="flex text-white bg-green-600 hover:bg-green-800 p-2 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-basket"><path d="m15 11-1 9"/><path d="m19 11-4-7"/><path d="M2 11h20"/><path d="m3.5 11 1.6 7.4a2 2 0 0 0 2 1.6h9.8a2 2 0 0 0 2-1.6l1.7-7.4"/><path d="M4.5 15.5h15"/><path d="m5 11 4-7"/><path d="m9 11 1 9"/></svg>  
+                  </div>
                 </a>
-              </div>
+
+                </div>
+              
             </div>
 
-
-            <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-4 min-h-80 flex flex-col justify-between">
-              <a href="#">
-                <img className="p-8 rounded-t-lg" src={Cheetos} alt="product image"/>
-              </a>
-              <div className="px-5 pb-5 flex-grow">
-                <a href="#">
-                  <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                  Cheetos
-                  </h5>
-                </a>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-2xl font-bold text-gray-900 dark:text-white">
-                  20฿
-                </span>
-                <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 p-3 rounded-lg">
-                  ใส่ตะกร้า
-                </a>
-              </div>
-            </div>
 
 
           </div>
