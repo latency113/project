@@ -1,0 +1,25 @@
+.quantity-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 120px;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.quantity-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #00bbb1;
+    cursor: pointer;
+    width: 30px;
+}
+
+.quantity-input {
+    border: none;
+    text-align: center;
+    width: 40px;
+    font-size: 18px;
+}

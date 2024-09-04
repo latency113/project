@@ -7,6 +7,7 @@ import NotFound from './pages/NotFound'
 import Login from './pages/Login'
 import Cart from './pages/Cart'
 import Signup from './pages/Signup'
+import Productdetail from './pages/Productdetail'
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/login" element={<Login/>}/>
           <Route path="/cart" element={<Cart/>}/>
           <Route path="/signup" element={<Signup/>}/>
+          <Route path="/detail" element={<Productdetail/>}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
       </Router>

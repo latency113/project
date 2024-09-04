@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
-import Layout from '../template/Layout'
+import Layout from '../components/Layout'
 
 const About = () => {
   return (
