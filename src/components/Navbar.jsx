@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import Logo from '/images/logo.png';
 import { NavLink } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../Contexts/CartContext';
 
 const Navbar = () => {
   // State to control the dropdown menu
@@ -18,7 +20,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  
+  const { cartItems, addToCart } = useContext(CartContext);
 
   return (
     <nav className='shadow-md'>
@@ -62,7 +64,6 @@ const Navbar = () => {
             </div>
 
 
-
             <div className='relative'>
               <NavLink to="/cart" className='flex items-center'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-shopping-basket hover:bg-slate-200 rounded-xl">
@@ -74,7 +75,7 @@ const Navbar = () => {
                   <path d="m5 11 4-7" />
                   <path d="m9 11 1 9" />
                 </svg>
-                <span className='absolute top-0 right-0 bg-green-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center'>0</span>
+                <span className='absolute top-0 right-0 bg-green-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center'>{cartItems}</span>
               </NavLink>
             </div>
             <div className='hidden md:flex'>

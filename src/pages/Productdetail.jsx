@@ -1,37 +1,25 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React, { useContext } from 'react';
+import Layout from '../components/Layout';
 import Apple from "/images/Apple.png";
-import './productdetail.css'
+import './productdetail.css';
 import QuantitySelector from '../components/QuantitySelector';
+import { CartContext } from '../Contexts/CartContext.jsx'; // ตรวจสอบเส้นทางของ CartContext.jsx
 
 const Productdetail = () => {
-  return (
-    <Layout>
-        <div className="flex w-auto bg-white border border-gray-200 p-2 rounded-lg shadow mt-5">
+    const { addToCart } = useContext(CartContext);
 
-                <img className="w-2/6 p-8 rounded-t-lg" src={Apple} alt="product image"/>
+    if (!addToCart) {
+        console.error("addToCart is undefined");
+        return null;
+    }
 
-            <div className=''>
-                    
-                
-                <div className="">
-                <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                    แอปเปิ้ล 1 ตะกร้า
-                  </h5>
-                    <span className="text-xl font-medium text-gray-900 dark:text-white">
-                        12฿/ลูก
-                    </span>
-                </div>
-
-
-                <div className='flex space-x-3'>
-                <QuantitySelector/>
-                </div>
+    return (
+        <Layout>
+            <div className="flex w-auto bg-white border border-gray-200 p-2 rounded-lg shadow mt-5">
+            <QuantitySelector onAddToCart={addToCart} />
             </div>
-        </div>
-    </Layout>
+        </Layout>
+    );
+};
 
-  )
-}
-
-export default Productdetail
+export default Productdetail;
