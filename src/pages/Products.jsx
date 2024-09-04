@@ -39,10 +39,22 @@ const Products = () => {
             description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
             price: "60฿"
           },
+          {
+            image: "Velveeta (2).png",
+            name: "ชีส Velveeta",
+            description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
+            price: "60฿"
+          },
+          {
+            image: "Smart Balance Original.png",
+            name: "ชีส Velveeta",
+            description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
+            price: "60฿"
+          },
         ];
   return (
     <div className="w-full bg-green-200 p-2 rounded-lg shadow">
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap justify-center gap-4">
             {p.map((b) => (
                 <div key={b.name} className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
                     <Cardprod {...b} />
