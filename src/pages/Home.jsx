@@ -11,7 +11,7 @@ import Products from "./Products";
 const Home = () => {
   return (
     <Layout>
-      <div className="bg-gray-300 p-4">
+      <div className="bg-green-100 p-4">
 
 
         {/* wait carousel */}
