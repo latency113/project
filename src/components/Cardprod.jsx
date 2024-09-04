@@ -7,7 +7,7 @@ const Cardprod = (props) => {
     <div className="w-full bg-white border border-gray-200 p-4 rounded-lg shadow">
         <NavLink to="/detail">
             <div className="w-full overflow-hidden rounded-t-lg">
-                <img className="w-full h-full object-cover" src={`/project/src/images/${props.image}`} alt={props.name} />
+                <img className="w-full h-full object-cover" src={`/images/${props.image}`} alt={props.name} />
             </div>
             <h5 className="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white mt-2">
                 {props.name}

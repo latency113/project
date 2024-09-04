@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import Layout from "../components/Layout";
-import Bbg from "../images/Banner.jpg";
-import { NavLink } from "react-router-dom";
+import Bbg from "/images/Banner.jpg";
 import Products from "./Products";
 
 

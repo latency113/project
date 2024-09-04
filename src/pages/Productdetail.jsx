@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Apple from "../images/Apple.png";
+import Apple from "/images/Apple.png";
 import './productdetail.css'
 import QuantitySelector from '../components/QuantitySelector';
 

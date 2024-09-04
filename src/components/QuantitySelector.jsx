@@ -16,15 +16,10 @@ function QuantitySelector() {
     };
 
     return (
-        <div>
+        <div className='flex items-center border rounded-md'>
             <div>
                 <button onClick={() => changeQuantity(-1)}>-</button>
-                <input
-                    type="text"
-                    value={quantity}
-                    readOnly
-                    style={styles.quantityInput}
-                />
+                <input className="border text-center w-10 font-medium" type="text" value={quantity} readOnly />
                 <button onClick={() => changeQuantity(1)}>+</button>
             </div>
             <div className="flex space-x-1 text-white bg-green-600 hover:bg-green-800 p-3 rounded-lg">
@@ -36,33 +31,6 @@ function QuantitySelector() {
             <p>Items in Cart: {cartItems}</p>
         </div>
     );
-}
-
-const styles = {
-    quantityContainer: {
-        display: 'flex',
-        alignItems: 'center',
-        border: '1px solid #ccc',
-        borderRadius: '5px',
-        width: '120px',
-        justifyContent: 'space-between',
-        padding: '5px',
-        marginBottom: '10px',
-    },
-    quantityBtn: {
-        backgroundColor: 'transparent',
-        border: 'none',
-        fontSize: '24px',
-        color: '#00bbb1',
-        cursor: 'pointer',
-        width: '30px',
-    },
-    quantityInput: {
-        border: 'none',
-        textAlign: 'center',
-        width: '40px',
-        fontSize: '18px',
-    },
 };
 
 export default QuantitySelector;
