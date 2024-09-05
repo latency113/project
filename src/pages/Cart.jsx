@@ -27,14 +27,14 @@ const Cart = () => {
                                 <span className='font-semibold'>{item.name} ({item.quantity})</span>
                                 <div className='flex justify-between space-x-5 flex-grow items-center'>
                                     <div className='flex font-bold'>
-                                        <button className='border p-2 rounded-l-[2px] text-blue-500 hover:text-blue-700'onClick={() => decreaseQuantity(item.name)}>
-                                            -
+                                        <button onClick={() => decreaseQuantity(item.name)} className='bg-white hover:bg-gray-200 px-[4px] py-[2px] rounded-l-[4px] text-green-500 hover:text-green-700'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-minus"><path d="M5 12h14"/></svg>
                                         </button>
-                                        <button className='border p-2 rounded-r-[2px] text-blue-500 hover:text-blue-700'onClick={() => increaseQuantity(item.name)}>
-                                            +
+                                        <button onClick={() => increaseQuantity(item.name)} className='bg-white hover:bg-gray-200 px-[4px] py-[2px] rounded-r-[4px] text-green-500 hover:text-green-700'>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
                                         </button>
                                     </div>
-                                        <button className='border text-red-500 hover:text-red-700 font-bold'onClick={() => removeFromCart(item.name)}>
+                                        <button onClick={() => removeFromCart(item.name)} className='bg-red-500 hover:bg-red-300 rounded-lg text-white  hover:text-red-700 font-bold p-1'>
                                             ลบสินค้า
                                         </button>
                                     <div className='flex justify-end'>
