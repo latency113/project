@@ -19,12 +19,10 @@ export const CartProvider = ({ children }) => {
         });
     };
     
-    const increaseQuantity = (itemName) => {
-        setCartItems((prevItems) => 
-            prevItems.map(i =>
-                i.name === itemName
-                    ? { ...i, quantity: i.quantity + 1 }
-                    : i
+    const increaseQuantity = (name) => {
+        setCartItems(prevItems => 
+            prevItems.map(item => 
+                item.name === name ? { ...item, quantity: item.quantity + 1 } : item
             )
         );
     };

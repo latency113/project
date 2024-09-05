@@ -58,9 +58,8 @@ const Products = () => {
         <div className="flex flex-wrap justify-center gap-4">
             {p.map((b) => (
                 <div key={b.name} className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                      <Link to={`/product/${b.name}`}>
-                          <Cardprod {...b} />
-                      </Link>
+                      <Link to={`/product/${b.name}`}></Link>
+                        <Cardprod {...b} />
                 </div>
             ))}
         </div>
