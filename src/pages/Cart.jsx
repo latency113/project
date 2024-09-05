@@ -35,7 +35,7 @@ const Cart = () => {
                                         </button>
                                     </div>
                                         <button className='border text-red-500 hover:text-red-700 font-bold'onClick={() => removeFromCart(item.name)}>
-                                            ลบจำนวนสินค้า
+                                            ลบสินค้า
                                         </button>
                                     <div className='flex justify-end'>
                                     <span className='text-red-500 font-bold'>{(item.quantity * parseFloat(item.price.replace('฿', ''))).toFixed(2)}฿</span>
