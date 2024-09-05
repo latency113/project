@@ -5,7 +5,7 @@ const Cardprod = (props) => {
   return (
     <>
     <div className="w-full bg-white border border-gray-200 p-4 rounded-lg shadow">
-        <NavLink to="/detail">
+        <NavLink to={`/product/${props.name}`}>
             <div className="w-full overflow-hidden rounded-t-lg">
                 <img className="w-full h-full object-cover" src={`/images/${props.image}`} alt={props.name} />
             </div>

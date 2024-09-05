@@ -1,5 +1,6 @@
 import React from 'react'
 import Cardprod from '../components/Cardprod';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
     const p = [
@@ -41,14 +42,14 @@ const Products = () => {
           },
           {
             image: "Velveeta (2).png",
-            name: "ชีส Velveeta",
+            name: "ชีส Velveeta แบบกล่อง",
             description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
-            price: "60฿"
+            price: "120฿"
           },
           {
             image: "Smart Balance Original.png",
-            name: "ชีส Velveeta",
-            description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
+            name: "Smart Balance Original",
+            description: "เป็นทางเลือกที่ดีต่อสุขภาพแทนเนย",
             price: "60฿"
           },
         ];
@@ -57,7 +58,9 @@ const Products = () => {
         <div className="flex flex-wrap justify-center gap-4">
             {p.map((b) => (
                 <div key={b.name} className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-                    <Cardprod {...b} />
+                      <Link to={`/product/${b.name}`}>
+                          <Cardprod {...b} />
+                      </Link>
                 </div>
             ))}
         </div>
@@ -65,4 +68,4 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Products;

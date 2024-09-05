@@ -75,7 +75,10 @@ const Navbar = () => {
                   <path d="m5 11 4-7" />
                   <path d="m9 11 1 9" />
                 </svg>
-                <span className='absolute top-0 right-0 bg-green-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center'>{cartItems}</span>
+                <span className='absolute top-0 right-0 bg-green-500 text-white font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center'>
+                  {cartItems.reduce((total, item) => total + item.quantity, 0)}
+                </span>
+
               </NavLink>
             </div>
             <div className='hidden md:flex'>

@@ -11,7 +11,11 @@ function QuantitySelector({ onAddToCart }) {
     };
 
     const handleAddToCart = () => {
-        onAddToCart(quantity); // ส่งจำนวนที่เลือกไปยังฟังก์ชัน addToCart ใน CartContext
+        if (quantity < 1) {
+            console.error("Quantity must be at least 1");
+            return;
+        }
+        onAddToCart(quantity);
     };
 
     return (
