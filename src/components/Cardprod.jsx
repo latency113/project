@@ -28,7 +28,7 @@ const Cardprod = (props) => {
                 <p className="text-xs sm:text-sm mt-1">{props.description}</p>
             </NavLink>
 
-            <div className="flex flex-col sm:flex-row justify-between items-center mt-3">
+            <div className="flex flex-col sm:flex-row justify-between mt-3">
                 <span className="text-xs sm:text-sm md:text-base font-medium text-gray-900 dark:text-white">
                     {props.price}
                 </span>
