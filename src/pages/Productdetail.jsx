@@ -76,13 +76,15 @@ const Productdetail = () => {
 
     return (
         <Layout>
-            <div className="flex w-auto bg-white border border-gray-200 p-4 rounded-lg shadow mt-5">
-                <img className="w-[350px] object-cover mb-4" src={`/images/${product.image}`} alt={product.name} />
-                <div>
-                    <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
-                    <p className="text-lg mb-4">{product.description}</p>
-                    <span className="text-xl font-medium mb-4">{product.price}</span>
-                    <QuantitySelector onAddToCart={handleAddToCart} />
+            <div className="container mx-auto p-4">
+                <div className="flex flex-col md:flex-row bg-white border border-gray-200 p-4 rounded-lg shadow-md">
+                    <img className="w-[350px] object-cover mb-4" src={`/images/${product.image}`} alt={product.name} />
+                    <div className='w-full md:w-1/2 md:pl-6 mt-4 md:mt-0'>
+                        <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
+                        <p className="text-lg mb-4">{product.description}</p>
+                        <span className="text-xl font-medium mb-4">{product.price}</span>
+                        <QuantitySelector onAddToCart={handleAddToCart} />
+                    </div>
                 </div>
             </div>
         </Layout>
