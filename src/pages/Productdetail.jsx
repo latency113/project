@@ -30,10 +30,10 @@ const products = [
         price: "25฿"
       },
       {
-        image: "pngegg.png",
-        name: "ขนม Cheetos รสกระดูก",
-        description: "Cheetos รสกระดูกรสชาติอร่อย",
-        price: "20฿"
+        image: "meat1.png",
+        name: "เนื้อเกรด S+",
+        description: "เนื้อวัวที่โตในวัง",
+        price: "500฿"
       },
       {
         image: "Velveeta (1).png",
@@ -43,14 +43,14 @@ const products = [
       },
       {
         image: "Velveeta (2).png",
-        name: "ชีส Velveeta",
+        name: "ชีส Velveeta แบบกล่อง",
         description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
-        price: "60฿"
+        price: "120฿"
       },
       {
         image: "Smart Balance Original.png",
-        name: "ชีส Velveeta",
-        description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
+        name: "Smart Balance Original",
+        description: "เป็นทางเลือกที่ดีต่อสุขภาพแทนเนย",
         price: "60฿"
       },
 ];

@@ -12,20 +12,25 @@ const Cart = () => {
 
     return (
         <Layout>
-            <div className='bg-gray-100 p-4'>
+            <div className='bg-gray-100 p-4 mt-3 mb-3 shadow-sm rounded-lg'>
                 <div>
                   <h1 className='text-2xl font-bold'>ตะกร้าของฉัน</h1>
                 </div>
                 
                 <div className='mt-4'>
-                    <h2 className='text-xl font-semibold'>Items in Cart:</h2>
+                    <h2 className='text-xl font-semibold'>สินค้าในตะกร้า</h2>
                     <ul>
                         {cartItems.map((item, index) => (
+                            <div>
                             <li key={index} className='flex space-x-5 py-2'>
-                                <img className="w-[150px]" src={`/images/${item.image}`} alt={item.name} />
-                                <span>{item.name} ({item.quantity})</span>
-                                <span>{(item.quantity * parseFloat(item.price.replace('฿', ''))).toFixed(2)}฿</span>
+                                <img className="w-[100px]" src={`/images/${item.image}`} alt={item.name} />
+                                    <span className='font-semibold'>{item.name} ({item.quantity})</span>
+                                <div className='flex justify-end'>
+                                    <span className='text-red-500 font-bold'>{(item.quantity * parseFloat(item.price.replace('฿', ''))).toFixed(2)}฿</span>
+                                </div>
                             </li>
+                            <hr/>
+                            </div>
                         ))}
                     </ul>
                 </div>
