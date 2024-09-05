@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import { CartContext } from '../Contexts/CartContext';
 
 const Cart = () => {
-    const { cartItems } = useContext(CartContext);
+    const { cartItems, removeFromCart, decreaseQuantity, increaseQuantity } = useContext(CartContext);
 
     // ฟังก์ชันในการคำนวณยอดรวม
     const calculateTotal = () => {
@@ -21,12 +21,25 @@ const Cart = () => {
                     <h2 className='text-xl font-semibold'>สินค้าในตะกร้า</h2>
                     <ul>
                         {cartItems.map((item, index) => (
-                            <div>
-                            <li key={index} className='flex space-x-5 py-2'>
+                            <div key={index}>
+                            <li className='flex space-x-5 py-2 items-center'>
                                 <img className="w-[100px]" src={`/images/${item.image}`} alt={item.name} />
-                                    <span className='font-semibold'>{item.name} ({item.quantity})</span>
-                                <div className='flex justify-end'>
+                                <span className='font-semibold'>{item.name} ({item.quantity})</span>
+                                <div className='flex justify-between space-x-5 flex-grow items-center'>
+                                    <div className='flex font-bold'>
+                                        <button className='border p-2 rounded-l-[2px] text-blue-500 hover:text-blue-700'onClick={() => decreaseQuantity(item.name)}>
+                                            -
+                                        </button>
+                                        <button className='border p-2 rounded-r-[2px] text-blue-500 hover:text-blue-700'onClick={() => increaseQuantity(item.name)}>
+                                            +
+                                        </button>
+                                    </div>
+                                        <button className='border text-red-500 hover:text-red-700 font-bold'onClick={() => removeFromCart(item.name)}>
+                                            ลบจำนวนสินค้า
+                                        </button>
+                                    <div className='flex justify-end'>
                                     <span className='text-red-500 font-bold'>{(item.quantity * parseFloat(item.price.replace('฿', ''))).toFixed(2)}฿</span>
+                                    </div>
                                 </div>
                             </li>
                             <hr/>

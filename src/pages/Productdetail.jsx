@@ -21,37 +21,37 @@ const products = [
         image: "Eggland.png",
         name: "ไข่ไก่เบอร์ 0",
         description: "เป็นไข่ไก่ที่มาจากอภิชาติฟาร์ม",
-        price: "120฿"
+        price: "120.00฿"
       },
       {
         image: "Fritos.png",
         name: "ขนม Fritos รสบาบีคิว",
         description: "ผลิตจากมันฝรั่งแท้ๆ รสชาติบาบีคิว",
-        price: "25฿"
+        price: "25.00฿"
       },
       {
         image: "meat1.png",
         name: "เนื้อเกรด S+",
         description: "เนื้อวัวที่โตในวัง",
-        price: "500฿"
+        price: "500.00฿"
       },
       {
         image: "Velveeta (1).png",
         name: "ชีส Velveeta",
         description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
-        price: "60฿"
+        price: "60.00฿"
       },
       {
         image: "Velveeta (2).png",
         name: "ชีส Velveeta แบบกล่อง",
         description: "เวลวีตาเป็นชื่อตราสินค้าของชีสแปรรูปที่คล้ายกับชีสอเมริกัน คิดค้นขึ้นในปี 1918",
-        price: "120฿"
+        price: "120.00฿"
       },
       {
         image: "Smart Balance Original.png",
         name: "Smart Balance Original",
         description: "เป็นทางเลือกที่ดีต่อสุขภาพแทนเนย",
-        price: "60฿"
+        price: "60.00฿"
       },
 ];
 
