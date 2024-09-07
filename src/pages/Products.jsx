@@ -25,13 +25,13 @@ const Products = () => {
           {
             image: "Cheese.png",
             name: "ชีส",
-            description: "ชีสนำเข้าจากเยอรมัน ไม่ใช่เนยนะ",
+            description: "ชีสนำเข้าจากเยอรมัน",
             price: "85.00฿"
           },
           {
             image: "Eggland.png",
             name: "ไข่ไก่เบอร์ 0",
-            description: "เป็นไข่ไก่ที่มาจากอภิชาติฟาร์ม",
+            description: "ไข่ไก่จากอภิชาติฟาร์ม เบอร์แรงแซงทางโค้ง",
             price: "120.00฿"
           },
           {
@@ -97,10 +97,10 @@ const Products = () => {
 
         ];
       return (
-          <div className="bg-green-200 p-4 rounded-lg shadow">
-              <div className="flex flex-wrap justify-center gap-5 sm:gap-6 md:gap-8">
+          <div className="p-4">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2">
                   {p.map((product) => (
-                      <div key={product.name} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+                      <div key={product.name} className="w-full">
                           <Link to={`/product/${product.name}`}></Link>
                               <Cardprod {...product} />
                       </div>

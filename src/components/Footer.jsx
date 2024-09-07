@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    <p className='text-center p-4'>©Copyright 2024:Khan</p>
+    <p className='bg-purple-300 text-center font-medium text-purple-600 p-2'>©Copyright 2024:Khan</p>
     </>
   )
 }

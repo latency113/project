@@ -1,55 +1,33 @@
-import React from 'react'
-import Layout from '../components/Layout'
-import { NavLink } from 'react-router-dom'
+import React from 'react';
+import Layout from '../components/Layout';
+import { NavLink } from 'react-router-dom';
 
 const Login = () => {
   return (
     <Layout>
+      <div className='flex justify-center items-center min-h-screen bg-gray-100'>
+        <div className='bg-purple-600 text-white rounded-2xl shadow-xl w-full max-w-4xl flex flex-col lg:flex-row overflow-hidden'>
+          {/* Section ข้อความต้อนรับ */}
+          <div className='flex-1 flex flex-col justify-center items-center p-10'>
+            <h1 className='text-3xl md:text-5xl font-bold mb-4'>ยินดีต้อนรับ</h1>
+            <p className='text-lg md:text-2xl'>เข้าสู่เว็บซุปเปอร์มาร์เก็ต</p>
+          </div>
 
-        <div className='text-green-500 text-4xl text-center mt-5 p-4 bg-white rounded-lg shadow '>
-            <h1>Login</h1>
-
-        <div className='p-4 justify-center flex'>
-             <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-            <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                  Sign in to your account
-              </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
-                  <div>
-                      <label for="email" className="flex mb-2 text-lg font-medium text-gray-900 dark:text-white">Your email</label>
-                      <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 text-sm dark:focus:border-blue-500" placeholder="enter your email" required=""/>
-                  </div>
-                  <div>
-                      <label for="password" className="flex mb-2 text-lg font-medium text-gray-900 dark:text-white">Password</label>
-                      <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 text-sm dark:focus:border-blue-500" required=""/>
-                  </div>
-                  <div className="flex items-center justify-between">
-                      <div className="flex items-start">
-                          <div class="flex items-center h-5">
-                            <input id="remember" aria-describedby="remember" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""/>
-                          </div>
-                          <div className="ml-3 text-sm">
-                            <label for="remember" class="text-gray-500 dark:text-gray-300">Remember me</label>
-                          </div>
-                      </div>
-                      <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">Forgot password?</a>
-                  </div>
-                  <button type="submit" className="w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Sign in</button>
-                  <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                      Don’t have an account yet?
-                      <NavLink to="/signup" className="font-medium text-primary-600 hover:underline dark:text-primary-500">
-                        <p>Sign up</p>
-                      </NavLink>
-                  </p>
-              </form>
+          {/* Section ปุ่มเข้าสู่ระบบและลงทะเบียน */}
+          <div className='bg-white flex-1 p-8 lg:p-16'>
+            <div className='flex flex-col space-y-6'>
+              <button className='border border-purple-500 py-3 px-10 rounded-full text-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-300'>
+                <NavLink to='/signin'>เข้าสู่ระบบ</NavLink>
+              </button>
+              <button className='bg-purple-500 py-3 px-10 rounded-full text-white hover:bg-purple-600 transition-all duration-300'>
+                <NavLink to='/signup'>ลงทะเบียน</NavLink>
+              </button>
             </div>
-            </div>
+          </div>
         </div>
-     </div>
-
+      </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

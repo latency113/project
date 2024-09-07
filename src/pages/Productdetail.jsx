@@ -5,7 +5,7 @@ import QuantitySelector from '../components/QuantitySelector';
 import { CartContext } from '../Contexts/CartContext.jsx';
 
 const products = [
-    {
+      {
         image: "Apple.png",
         name: "แอปเปิ้ลเขียว",
         description: "แอปเปิ้ลเขียวนำเข้าจากญี่ปุ่น",
@@ -26,13 +26,13 @@ const products = [
       {
         image: "Cheese.png",
         name: "ชีส",
-        description: "ชีสนำเข้าจากเยอรมัน ไม่ใช่เนยนะ",
+        description: "ชีสนำเข้าจากเยอรมัน",
         price: "85.00฿"
       },
       {
         image: "Eggland.png",
         name: "ไข่ไก่เบอร์ 0",
-        description: "เป็นไข่ไก่ที่มาจากอภิชาติฟาร์ม",
+        description: "ไข่ไก่จากอภิชาติฟาร์ม เบอร์แรงแซงทางโค้ง",
         price: "120.00฿"
       },
       {
@@ -109,7 +109,7 @@ const Productdetail = () => {
     const product = products.find(p => p.name === name);
 
     if (!product) {
-        return <Layout><p className='text-3xl text-center p-4'>ไม่พบข้อมูลผลิตภัณฑ์</p></Layout>
+        return <Layout><p className='text-3xl text-center p-4'>ไม่พบข้อมูลผลิตภัณฑ์</p></Layout>;
     }
 
     const handleAddToCart = (quantity) => {
@@ -118,13 +118,13 @@ const Productdetail = () => {
 
     return (
         <Layout>
-            <div className="container mx-auto p-4">
-                <div className="flex flex-col md:flex-row bg-white border border-gray-200 p-4 rounded-lg shadow-md">
-                    <img className="w-[350px] object-cover mb-4" src={`/images/${product.image}`} alt={product.name} />
-                    <div className='w-full md:w-1/2 md:pl-6 mt-4 md:mt-0'>
-                        <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
-                        <p className="text-lg mb-4">{product.description}</p>
-                        <span className="text-xl font-medium mb-4">{product.price}</span>
+            <div className="container mx-auto p-6">
+                <div className="flex flex-col md:flex-row bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
+                    <img className="w-full md:w-[400px] object-cover mb-6 md:mb-0 rounded-lg shadow-md" src={`/images/${product.image}`} alt={product.name} />
+                    <div className='md:pl-8 flex flex-col justify-center'>
+                        <h1 className="text-4xl font-bold text-gray-800 mb-4">{product.name}</h1>
+                        <p className="text-lg text-gray-600 mb-6">{product.description}</p>
+                        <span className="text-2xl font-semibold text-purple-600 mb-6">{product.price}</span>
                         <QuantitySelector onAddToCart={handleAddToCart} />
                     </div>
                 </div>
