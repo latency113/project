@@ -47,13 +47,13 @@ const Cart = () => {
         <Layout>
             <div className='bg-white p-8 mt-10 mb-12 shadow-xl rounded-lg'>
                 <div className='text-center'>
-                    <h1 className='text-4xl font-bold text-purple-700 mb-6'>ตะกร้าสินค้าของคุณ</h1>
+                    <h1 className='text-2xl font-bold text-purple-700 mb-6'>ตะกร้าสินค้าของคุณ</h1>
                 </div>
 
                 <div className='mt-8'>
-                    <h2 className='text-3xl font-semibold text-gray-800 mb-6'>สินค้าในตะกร้า</h2>
+                    <h2 className='text-xl font-semibold text-gray-800 mb-6'>สินค้าในตะกร้า</h2>
                     {cartItems.length === 0 ? (
-                        <p className="text-lg text-gray-600 text-center">ไม่มีสินค้าในตะกร้า</p>
+                        <p className="text-md text-gray-600 text-center">ไม่มีสินค้าในตะกร้า</p>
                     ) : (
                         <ul className='space-y-8'>
                             {cartItems.map((item, index) => (
@@ -87,8 +87,8 @@ const Cart = () => {
                 </div>
 
                 <div className='flex flex-col sm:flex-row justify-between items-center mt-10 pt-6 border-t'>
-                    <h2 className='text-3xl font-bold text-gray-800'>ยอดรวม:</h2>
-                    <span className='text-3xl font-bold text-purple-700'>{calculateTotal()}฿</span>
+                    <h2 className='text-xl font-bold text-gray-800'>ยอดรวม:</h2>
+                    <span className='text-xl font-bold text-purple-700'>{calculateTotal()}฿</span>
                 </div>
             </div>
         </Layout>
