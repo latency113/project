@@ -6,7 +6,7 @@ const Signup = () => {
   return (
     <Layout>
       <div className='flex justify-center items-center min-h-screen bg-gray-100'>
-        <div className='max-w-md bg-white rounded-lg shadow-lg p-6'>
+        <div className='max-w-md bg-white rounded-lg shadow-lg p-6 sm:w-4/6'>
           <h1 className='text-purple-600 text-3xl text-center font-bold mb-6'>ลงทะเบียน</h1>
           <form className='space-y-4'>
             <div>
@@ -68,7 +68,7 @@ const Signup = () => {
             </button>
             <p className='text-sm text-center text-gray-600'>
               มีบัญชีผู้ใช้แล้ว ? 
-              <NavLink to="/signin" className='text-purple-600 hover:underline ml-1'>เข้าสู้ระบบ</NavLink>
+              <NavLink to="/signin" className='text-purple-600 hover:underline ml-1'>เข้าสู่ระบบ</NavLink>
             </p>
           </form>
         </div>
