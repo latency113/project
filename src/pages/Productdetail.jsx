@@ -109,7 +109,7 @@ const Productdetail = () => {
     const product = products.find(p => p.name === name);
 
     if (!product) {
-        return <Layout><p className='text-3xl text-center p-4'>ไม่พบข้อมูลผลิตภัณฑ์</p></Layout>;
+        return <Layout><p className='text-3xl text-center p-20'>ไม่พบข้อมูลผลิตภัณฑ์</p></Layout>;
     }
 
     const handleAddToCart = (quantity) => {
