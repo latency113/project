@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import Logo from '/images/logo.png';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
@@ -16,7 +16,7 @@ const Navbar = () => {
   const { cartItems } = useContext(CartContext);
 
   return (
-    <nav className='shadow-md'>
+    <nav className='fixed top-0 left-0 right-0 shadow-md bg-white z-50'>
       <div className='container mx-auto px-4'>
         <div className='flex justify-between items-center h-16'>
 
@@ -36,8 +36,33 @@ const Navbar = () => {
             <NavLink to="/" className="flex items-center">
               <img src={Logo} className='w-16' alt="Logo" />
               <div className='font-bold p-2 text-purple-500 text-xl sm:text-2xl'>
-                <span>Super Market</span>
+                <span>Makpro</span>
               </div>
+            </NavLink>
+          </div>
+
+          {/* Search Bar Section */}
+          <div className='hidden md:flex items-center space-x-4'>
+            <input 
+              type="text" 
+              placeholder="ค้นหาสินค้า..." 
+              className='border rounded-lg px-4 py-2 w-80 focus:outline-none focus:ring-2 focus:ring-purple-500' 
+            />
+            <button className='bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600'>
+              ค้นหา
+            </button>
+          </div>
+
+          {/* Categories Section */}
+          <div className='hidden md:flex items-center space-x-4'>
+            <NavLink to="/category/food" className="hover:text-purple-500">
+              อาหาร
+            </NavLink>
+            <NavLink to="/category/electronics" className="hover:text-purple-500">
+              อิเล็กทรอนิกส์
+            </NavLink>
+            <NavLink to="/category/clothing" className="hover:text-purple-500">
+              เสื้อผ้า
             </NavLink>
           </div>
 
@@ -91,6 +116,31 @@ const Navbar = () => {
                   <path d="M6 6l12 12" />
                 </svg>
               </button>
+            </div>
+
+            {/* Search Bar and Categories in Mobile */}
+            <div className='mt-6'>
+              <input 
+                type="text" 
+                placeholder="ค้นหาสินค้า..." 
+                className='border rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-purple-500 mb-4' 
+              />
+              <button className='bg-purple-500 text-white w-full py-2 rounded-lg mb-4 hover:bg-purple-600'>
+                ค้นหา
+              </button>
+
+              <div className='text-gray-700'>
+                <h3 className='font-bold mb-2'>หมวดหมู่</h3>
+                <NavLink to="/category/food" className="block py-2 hover:bg-gray-100 rounded-lg mb-2" onClick={toggleSidebar}>
+                  อาหาร
+                </NavLink>
+                <NavLink to="/category/electronics" className="block py-2 hover:bg-gray-100 rounded-lg mb-2" onClick={toggleSidebar}>
+                  อิเล็กทรอนิกส์
+                </NavLink>
+                <NavLink to="/category/clothing" className="block py-2 hover:bg-gray-100 rounded-lg mb-2" onClick={toggleSidebar}>
+                  เสื้อผ้า
+                </NavLink>
+              </div>
             </div>
 
             <div className='mt-6'>

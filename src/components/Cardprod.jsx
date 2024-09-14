@@ -18,7 +18,7 @@ const Cardprod = (props) => {
     };
 
     return (
-        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 p-3 rounded-lg shadow-md hover:shadow-lg transition-transform hover:scale-105 transform duration-300 ease-in-out">
+        <div className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg bg-white border border-gray-200 p-3 rounded-lg shadow-md hover:shadow-lg">
             {/* ลิงก์ไปยังหน้ารายละเอียดสินค้า */}
             <NavLink to={`/product/${props.name}`}>
                 <div className="w-full h-40 sm:h-48 md:h-56 lg:h-60 overflow-hidden rounded-t-lg">
