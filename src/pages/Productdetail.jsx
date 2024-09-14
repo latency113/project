@@ -109,7 +109,7 @@ const Productdetail = () => {
     const product = products.find(p => p.name === name);
 
     if (!product) {
-        return <Layout><p className='text-3xl text-center p-20'>ไม่พบข้อมูลผลิตภัณฑ์</p></Layout>;
+        return <Layout><p className='text-3xl text-center pt-20'>ไม่พบข้อมูลผลิตภัณฑ์</p></Layout>;
     }
 
     const handleAddToCart = (quantity) => {
@@ -118,7 +118,7 @@ const Productdetail = () => {
 
     return (
         <Layout>
-            <div className="container mx-auto p-6">
+            <div className="container mx-auto pt-20">
                 <div className="flex flex-col md:flex-row bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
                     <img className="w-full md:w-[400px] object-cover mb-6 md:mb-0 rounded-lg shadow-md" src={`/images/${product.image}`} alt={product.name} />
                     <div className='md:pl-8 flex flex-col justify-center'>
