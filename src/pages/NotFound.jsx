@@ -8,7 +8,7 @@ const NotFound = () => {
       <div className='flex justify-center'>
           <div className='text-center p-40 text-2xl'>
             <p>ไม่พบหน้าที่ต้องการ</p>
-            <button className='bg-purple-500 rounded-full text-white font-semibold my-5 p-4'>
+            <button className='bg-purple-500 rounded-full text-white font-semibold my-5 p-4 md:w-2/5'>
               <NavLink to='/'>กลับไปหน้าแรก</NavLink>
             </button>
           </div> 
