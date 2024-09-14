@@ -12,7 +12,7 @@ const Login = () => {
           {/* Section ข้อความต้อนรับ */}
           <div className='flex-1 flex flex-col justify-center items-center p-6 lg:p-10'>
             <h1 className='text-2xl md:text-4xl lg:text-5xl font-bold mb-2 lg:mb-4'>ยินดีต้อนรับ</h1>
-            <p className='text-lg md:text-xl lg:text-2xl text-center'>เข้าสู่เว็บซุปเปอร์มาร์เก็ต</p>
+            <p className='text-lg md:text-xl lg:text-2xl text-center'>เข้าสู่เว็บ Makpro</p>
           </div>
 
           {/* Section ปุ่มเข้าสู่ระบบและลงทะเบียน */}
