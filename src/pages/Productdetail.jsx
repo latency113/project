@@ -49,7 +49,7 @@ const products = [
       },
       {
         image: "meat3.png",
-        name: "เนื้อเกรด S+",
+        name: "เนื้อเกรด SS+",
         description: "เนื้อวัวที่โตในวัง เลี้ยงด้วยอาหารอย่างดี",
         price: "500.00฿"
       },
