@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 const About = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 pt-20">
         <h3 className="text-3xl font-bold text-center mb-6">เกี่ยวกับเว็บไซต์ของเรา</h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
