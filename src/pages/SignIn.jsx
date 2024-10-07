@@ -6,7 +6,7 @@ const SignIn = () => {
   return (
     <Layout>
       <div className='flex justify-center items-center min-h-screen bg-gray-100 '>
-        <div className='max-w-md bg-white rounded-lg shadow-lg p-6 sm:w-2/4'>
+        <div className='max-w-md bg-white rounded-lg shadow-lg p-6 md:w-[55%]'>
           <h1 className='text-purple-600 text-3xl text-center font-bold mb-6'>เข้าสู่ระบบ</h1>
           <form className='space-y-4'>
             <div>

@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <Layout>
       <div className="p-2 md:p-4 lg:p-6 ">
-        <div className="bg-purple-100 rounded-xl pt-10">
+        <div className="bg-purple-100 rounded-xl pt-20">
           <SlideShow/>
         </div>
 
